@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicon.ico">
+    <title>Coffee Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="/" class="logo">
+            <img src="img/logo.jpg" alt="">
+            <h1>Coffee Shop</h1>
+        </a>
+
+        <!--Menu Icon-->
+        <i class="ph ph-list" id="menu-icon"></i>
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products" id="products">Products</a></li>
+            <li><a href="#customers">Feedbacks</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="categories">
+            <a href="#espresso">Espresso-Based Coffees</a>
+            <a href="#brewed">Brewed Coffees</a>
+            <a href="#cold">Cold Coffees</a>
+            <a href="#flavored">Flavored Coffees</a>
+            <a href="#specialty">Specialty Coffees</a>
+            <a href="#decaf">Decaf Options</a>
+        </div>
+
+        <!--Icons-->
+        <div class="header-icon">
+            <i class="ph ph-magnifying-glass" id="search-icon" title="Search"></i>
+            <i class="ph ph-shopping-cart" title="Your Cart"></i>
+            <i class="ph ph-user-circle" title="Your Profile"></i>
+        </div>
+        <!--Search Box-->
+        <div class="search-box">
+            <input type="search" placeholder="Search Here...">
+        </div>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Powered by<br>coffee and dreams</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est, asperiores quo labore voluptate quibusdam, similique 
+                dolorem deserunt doloremque mollitia beatae distinctio aut dolor iusto minus sit officia impedit quas.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/main.png" alt="">
+        </div>
+    </section>
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio molestiae ad consectetur facilis, impedit repudiandae 
+                autem sapiente ut neque ratione non id magni nisi dolorum perspiciatis vel sequi velit?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui veritatis quibusdam quod, pariatur repellat magni porro 
+                autem in recusandae aperiam facere deserunt maiores culpa quia cupiditate debitis fuga molestias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quo recusandae. Nulla incidunt tenetur nemo quis sequi. 
+                Inventore magni exercitationem voluptatibus at velit voluptatum, accusantium quibusdam amet labore. Maxime, consectetur!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!--Products-->
+    <section class="products" id="product">
+        <div class="heading">
+            <h2>Our Products</h2>
+        </div>
+        <!--Categories-->
+        <div class="category-section" id="espresso">
+            <div class="category-title">Espresso-Based Coffees</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Espresso.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Espresso</h3>
+                                <span>Rs.525</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Doppio.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Doppio</h3>
+                                <span>Rs.625</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Macchiato.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Macchiato</h3>
+                                <span>Rs.650</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Cortado.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Cortado</h3>
+                                <span>Rs.700</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Cappuccino.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Cappuccino</h3>
+                                <span>Rs.850</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Flat_White.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Flat White</h3>
+                                <span>Rs.850</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Latte</h3>
+                                <span>Rs.875</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Mocha.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Mocha</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Espresso_Based/Affogato.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Affogato</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="category-section" id="brewed">
+            <div class="category-title">Brewed Coffees</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Brewed_Coffees/Drip_Coffee.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Drip Coffee</h3>
+                                <span>Rs.675</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Brewed_Coffees/Pour_Over.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Pour Over</h3>
+                                <span>Rs.900</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Brewed_Coffees/French_Press.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>French Press</h3>
+                                <span>Rs.800</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Brewed_Coffees/AeroPress.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>AeroPress</h3>
+                                <span>Rs.800</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Brewed_Coffees/Cold_Drip.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Cold Drip</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="category-section" id="cold">
+            <div class="category-title">Cold Coffees / Iced Coffees</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Iced_Americano.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Iced Americano</h3>
+                                <span>Rs.800</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Iced_Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Iced Latte</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Iced_Mocha.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Iced Mocha</h3>
+                                <span>Rs.975</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Iced_Cappuccino.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Iced Cappuccino</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Cold_Brew.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Cold Brew</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Nitro_Cold_Brew.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Nitro Cold Brew</h3>
+                                <span>Rs.1,025</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Cold_Coffees/Iced_Espresso_Tonic.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Iced Espresso Tonic</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="category-section" id="flavored">
+            <div class="category-title">Flavored Coffees</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Vanilla_Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Vanilla Latte</h3>
+                                <span>Rs.1,000</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Caramel_Macchiato.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Caramel Macchiato</h3>
+                                <span>Rs.1,000</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Hazelnut_Mocha.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Hazelnut Mocha</h3>
+                                <span>Rs.1,000</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Pumpkin_Spice_Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Pumpkin Spice Latte</h3>
+                                <span>Rs.1,075</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Cinnamon_Cappuccino.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Cinnamon Cappuccino</h3>
+                                <span>Rs.925</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Flavored_Coffees/Irish_Cream_Coffee.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Irish Cream Coffee</h3>
+                                <span>Rs.1,000</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="category-section" id="specialty">
+            <div class="category-title">Specialty Coffees</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Specialty_Coffees/House_Blend.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>House Blend</h3>
+                                <span>Rs.1,100</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Specialty_Coffees/Coffee_Float.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Coffee Float</h3>
+                                <span>Rs.950</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Specialty_Coffees/Coconut_Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Coconut Latte</h3>
+                                <span>Rs.900</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Specialty_Coffees/Spiced_Honey_Espresso.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Spiced Honey Espresso</h3>
+                                <span>Rs.1,150</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Specialty_Coffees/Chocolate_Chili_Mocha.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Chocolate Chili Mocha</h3>
+                                <span>Rs.1,200</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="category-section" id="decaf">
+            <div class="category-title">Decaf Options</div>
+            <div class="slider-container">
+                <span class="scroll-left"><i class="ph ph-caret-circle-left"></i></span>
+                <div class="product-container">
+                    <div class="box">
+                        <img src="img/items/Decaf_Options/Decaf_Espresso.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Decaf Espresso</h3>
+                                <span>Rs.700</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Decaf_Options/Decaf_Americano.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Decaf Americano</h3>
+                                <span>Rs.850</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Decaf_Options/Decaf_Latte.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Decaf Latte</h3>
+                                <span>Rs.900</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/items/Decaf_Options/Decaf_Cold_Brew.png" alt="">
+                        <div class="box-content">
+                            <div class="about-item">
+                                <h3>Decaf Cold Brew</h3>
+                                <span>Rs.975</span>
+                            </div>
+                            <a href="#" title="Add to Cart"><i class="ph ph-plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="scroll-right"><i class="ph ph-caret-circle-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!--Customers-->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our Customers</h2>
+        </div>
+        <!--Container-->
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor, dolores. Consectetur ut sunt sit sed, quasi rerum 
+                    unde eum minus doloremque sequi libero labore veritatis 
+                    voluptatum ad, nesciunt commodi atque.</p>
+                <h2>Disura Sandaruwan</h2>
+                <img src="img/feedbacks/rev.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star-half"></i>
+                    <i class="ph ph-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor, dolores. Consectetur ut sunt sit sed, quasi rerum 
+                    unde eum minus doloremque sequi libero labore veritatis 
+                    voluptatum ad, nesciunt commodi atque.</p>
+                <h2>Sachintha Sanjaya</h2>
+                <img src="img/feedbacks/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph ph-star"></i>
+                    <i class="ph ph-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor, dolores. Consectetur ut sunt sit sed, quasi rerum 
+                    unde eum minus doloremque sequi libero labore veritatis 
+                    voluptatum ad, nesciunt commodi atque.</p>
+                <h2>Darshan Ekanayake</h2>
+                <img src="img/feedbacks/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor, dolores. Consectetur ut sunt sit sed, quasi rerum 
+                    unde eum minus doloremque sequi libero labore veritatis 
+                    voluptatum ad, nesciunt commodi atque.</p>
+                <h2>Madushika Chathuranganee</h2>
+                <img src="img/feedbacks/rev3.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph ph-star"></i>
+                    <i class="ph ph-star"></i>
+                    <i class="ph ph-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor, dolores. Consectetur ut sunt sit sed, quasi rerum 
+                    unde eum minus doloremque sequi libero labore veritatis 
+                    voluptatum ad, nesciunt commodi atque.</p>
+                <h2>Ashen Dissanayake</h2>
+                <img src="img/feedbacks/rev4.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer" id="contact">
+        <div class="footer-box description">
+            <a href="/"><h3>Coffee Shop</h3></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veniam nihil qui laborum totam temporibus, exercitationem, 
+                repudiandae dicta rem, quidem ipsa cum sed. Explicabo 
+                quasi tempore voluptatum delectus minima atque earum.</p>
+            <div class="social">
+                <a href="#" title="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                <a href="#" title="Twitter"><i class="ph-fill ph-x-logo"></i></a>
+                <a href="#" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                <a href="#" title="Tiktok"><i class="ph-fill ph-tiktok-logo"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#">Our Branches</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class="ph-fill ph-map-pin"></i>No:44/3/A, Mahena Waththa, Pahala Imbulgoda, Imbulgoda</span>
+                <span><a href="tel:+94702658840"><i class="ph-fill ph-phone"></i>+94 702658840</a></span>
+                <span><a href="mailto:coffee@shop.com"><i class="ph-fill ph-envelope"></i>coffee@shop.com</a></span>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
+    <div class="copyright">© 2025-June M.P.P. Disura Sandaruwan. All rights reserved.</div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
