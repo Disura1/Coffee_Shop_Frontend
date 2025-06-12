@@ -8,8 +8,11 @@
     <link rel="icon" href="img/favicon.ico">
     <title>Coffee Shop</title>
 
+    <!--CSS Link-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Leaflet Map Library-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--Icons-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
 </head>
@@ -17,14 +20,15 @@
 <body>
     <!--Navbar-->
     <header>
-        <a href="/" class="logo">
+        <!--Shop logo and name-->
+        <a href="/index.html" class="logo">
             <img src="img/logo.jpg" alt="">
             <h1>Coffee Shop</h1>
         </a>
 
         <!--Menu Icon-->
         <i class="ph ph-list" id="menu-icon"></i>
-        <!--Links-->
+        <!--Navbar Links-->
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -32,6 +36,7 @@
             <li><a href="#customers">Feedbacks</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
+        <!--Product Categories-->
         <div class="categories">
             <a href="#espresso">Espresso-Based Coffees</a>
             <a href="#brewed">Brewed Coffees</a>
@@ -88,7 +93,7 @@
         <div class="heading">
             <h2>Our Products</h2>
         </div>
-        <!--Categories-->
+        <!--Category 01-->
         <div class="category-section" id="espresso">
             <div class="category-title">Espresso-Based Coffees</div>
             <div class="slider-container">
@@ -189,6 +194,7 @@
             </div>
         </div>
 
+        <!--Category 02-->
         <div class="category-section" id="brewed">
             <div class="category-title">Brewed Coffees</div>
             <div class="slider-container">
@@ -249,6 +255,7 @@
             </div>
         </div>
 
+        <!--Category 03-->
         <div class="category-section" id="cold">
             <div class="category-title">Cold Coffees / Iced Coffees</div>
             <div class="slider-container">
@@ -329,6 +336,7 @@
             </div>
         </div>
 
+        <!--Category 04-->
         <div class="category-section" id="flavored">
             <div class="category-title">Flavored Coffees</div>
             <div class="slider-container">
@@ -399,6 +407,7 @@
             </div>
         </div>
 
+        <!--Category 05-->
         <div class="category-section" id="specialty">
             <div class="category-title">Specialty Coffees</div>
             <div class="slider-container">
@@ -459,6 +468,7 @@
             </div>
         </div>
 
+        <!--Category 06-->
         <div class="category-section" id="decaf">
             <div class="category-title">Decaf Options</div>
             <div class="slider-container">
@@ -517,6 +527,7 @@
         </div>
         <!--Container-->
         <div class="customers-container">
+            <!--Customer 01-->
             <div class="box">
                 <div class="stars">
                     <i class="ph-fill ph-star"></i>
@@ -532,6 +543,8 @@
                 <h2>Disura Sandaruwan</h2>
                 <img src="img/feedbacks/rev.jpg" alt="">
             </div>
+
+            <!--Customer 02-->
             <div class="box">
                 <div class="stars">
                     <i class="ph-fill ph-star"></i>
@@ -547,6 +560,8 @@
                 <h2>Sachintha Sanjaya</h2>
                 <img src="img/feedbacks/rev1.jpg" alt="">
             </div>
+
+            <!--Customer 03-->
             <div class="box">
                 <div class="stars">
                     <i class="ph-fill ph-star"></i>
@@ -562,6 +577,8 @@
                 <h2>Darshan Ekanayake</h2>
                 <img src="img/feedbacks/rev2.jpg" alt="">
             </div>
+
+            <!--Customer 04-->
             <div class="box">
                 <div class="stars">
                     <i class="ph-fill ph-star"></i>
@@ -577,6 +594,8 @@
                 <h2>Madushika Chathuranganee</h2>
                 <img src="img/feedbacks/rev3.jpg" alt="">
             </div>
+
+            <!--Customer 05-->
             <div class="box">
                 <div class="stars">
                     <i class="ph-fill ph-star"></i>
@@ -597,8 +616,9 @@
 
     <!--Footer-->
     <section class="footer" id="contact">
+        <!--Description-->
         <div class="footer-box description">
-            <a href="/"><h3>Coffee Shop</h3></a>
+            <a href="/index.html"><h3>Coffee Shop</h3></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Veniam nihil qui laborum totam temporibus, exercitationem, 
                 repudiandae dicta rem, quidem ipsa cum sed. Explicabo 
@@ -610,6 +630,8 @@
                 <a href="#" title="Tiktok"><i class="ph-fill ph-tiktok-logo"></i></a>
             </div>
         </div>
+
+        <!--Support Links-->
         <div class="footer-box">
             <h3>Support</h3>
             <li><a href="#product">Products</a></li>
@@ -619,6 +641,8 @@
             <li><a href="#">Terms of Use</a></li>
             
         </div>
+
+        <!--Contact Links-->
         <div class="footer-box">
             <h3>Contact</h3>
             <div class="contact">
@@ -627,10 +651,13 @@
                 <span><a href="mailto:coffee@shop.com"><i class="ph-fill ph-envelope"></i>coffee@shop.com</a></span>
             </div>
         </div>
+
+        <!--Map-->
         <div id="map"></div>
     </section>
     <div class="copyright">© 2025-June M.P.P. Disura Sandaruwan. All rights reserved.</div>
 
+    <!--JS Links-->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="js/script.js"></script>
 </body>

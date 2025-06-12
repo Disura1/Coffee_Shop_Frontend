@@ -1,4 +1,4 @@
-//Search box and Navigation icon
+//Search box & Navigation icon & Categories section
 let search = document.querySelector(".search-box");
 let navbar = document.querySelector(".navbar");
 let categories = document.querySelector(".categories");
@@ -132,12 +132,12 @@ customer_container.addEventListener('mouseleave', () => {
 document.addEventListener('DOMContentLoaded', setupSlider);
 
 //Map location
-const map = L.map('map').setView([7.034960, 79.990580], 13); // Example: Colombo
+const map = L.map('map').setView([7.034960, 79.990580], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
 L.marker([7.034960, 79.990580]).addTo(map)
-  .bindPopup('Your Location')
+  .bindPopup('Coffee Shop')
   .openPopup();

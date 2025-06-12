@@ -1,5 +1,4 @@
 *{
-    font-family: cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,6 +23,7 @@ img{
 }
 body{
     color: var(--text-color);
+    font-family: cursive;
 }
 header{
     position: fixed;
@@ -612,6 +612,9 @@ header{
     }
 }
 @media (max-width: 768px){
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
     .logo img{
         width: 50px;
     }
@@ -735,7 +738,7 @@ header{
         font-size: 0.7rem;
     }
     .customers-container .box{
-        width: 15rem;
+        width: 16rem;
     }
     .footer{
         grid-template-columns: 1fr 1fr 1fr;
@@ -759,6 +762,9 @@ header{
     }
 }
 @media (max-width: 575.98px){
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
     section{
         padding: 20px 20px;
     }
@@ -815,13 +821,14 @@ header{
         grid-template-columns: 1fr 2fr;
         grid-gap: 5px;
         column-gap: 5px;
+        height: 24rem;
     }
     .description{
         position: static;
         padding: 0 10px;
     }
     #map{
-        height: 10.2rem;
+        height: 12.1rem;
         width: 8rem;
     }
 }
